@@ -1,0 +1,31 @@
+body {
+  overflow-x:hidden;  /*不出现横向滚动条*/
+}
+
+#wall {
+  height: 400px;
+  border: 2.5px #FFCC33 solid;
+  border-radius: 5px;
+  margin: 30px 60px;
+}
+
+input.form-control {
+  border: 1px #337ab7 solid;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+/*遮蔽弹幕窗口外的弹幕*/
+#coverLeft, #coverRight {  
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.bullet {
+  position: absolute;
+  white-space: nowrap;
+  z-index: 10;
+}

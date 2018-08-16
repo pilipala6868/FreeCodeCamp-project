@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Danmu App</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="danmu.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="danmu.js"></script>
+  </head>
+  <body>
+    <div id="coverLeft"></div>
+    <div id="wall">
+    </div>
+    <div id="coverRight"></div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6 col-md-offset-2">
+          <input type="text" id="inputText" class="form-control" placeholder="Say something?" maxlength=16 />
+        </div>          
+        <button id="sendBt" class="btn btn-primary col-md-1">
+          <i class="fa fa-plane"></i> Send
+        </button>
+        <button id="clearBt" class="btn btn-danger col-md-1">
+          <i class="fa fa-trash"></i> Clear
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
