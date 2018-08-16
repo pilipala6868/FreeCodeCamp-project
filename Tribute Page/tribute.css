@@ -1,0 +1,59 @@
+body {
+  margin-top: 40px;
+}
+
+h1 {
+  color: #223;
+  font-size: 50px;
+  margin-left: 60px;
+}
+
+h2 {
+  color: #223;
+  font-size: 26px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+#mainBox {
+  background-color: #FFF3DD;
+  padding: 30px 20px 60px 20px;
+  border-radius: 10px;
+}
+
+#imgBox {
+  background-color: #fff;
+  padding: 5px;
+  margin: 0px 40px;
+  border-radius: 6px;
+}
+#imgBox div {
+  text-align: center;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#movieList {
+  margin: 30px 0px;
+}
+#movieList strong {
+  margin-right: 10px;
+}
+
+#comment {
+  font-size: 20px;
+}
+#comefrom {
+  text-align: right;
+  font-size: 18px;
+  color: gray;
+}
+
+#picRow {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#endLine {
+  font-size: 24px;
+}
