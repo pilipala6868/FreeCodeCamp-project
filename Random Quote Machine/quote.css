@@ -1,0 +1,52 @@
+body {
+  background-color: #16A085;
+}
+
+#sBox {
+  background-color: #fff;
+  margin-top: 120px;
+  border-radius: 3px;
+  padding: 40px 55px;
+}
+
+#sentence {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #16A085;
+}
+#sentence i {
+  font-size: 30px;
+}
+
+#source {
+  font-size: 22px;
+  text-align: right;
+  margin-bottom: 30px;
+  color: #16A085;
+}
+
+.bts {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  padding: 10px 12px;
+  background-color: #16A085;
+  cursor: pointer;
+}
+#share {
+  float: left;
+  text-decoration: none;
+}
+#share:hover, #share:visited {
+  color: #fff;
+}
+#share img {
+  width: 21px;
+}
+#share span {
+  vertical-align: middle; 
+}
+#getSent {
+  float: right;
+}
