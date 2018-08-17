@@ -1,0 +1,55 @@
+
+body {
+	background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
+}
+
+
+#calculator {
+	text-align: center;
+	margin: 120px auto;
+	padding: 15px 10px;
+	width: 280px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px 2px #ddd;
+}
+
+
+#screen {
+	width: 264px;
+	height: 40px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 12px auto 16px auto;
+	border: 1.5px solid #dee7ec;
+	overflow: hidden;
+}
+#formula {
+	margin-right: 10px;
+}
+
+
+#keyboard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.key {
+	display: inline-block;
+	margin: 1px;
+	background-color: #dee7ec;
+	cursor: pointer;
+}
+.key:active{
+    box-shadow: 0.5px 0.5px 2px 1px #bbb inset;  /*按键效果*/
+}
+.key div {
+	display: flex;
+	width: 65px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	user-select: none;  /*双击不选中*/
+}
