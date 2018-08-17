@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Show the Local Weather</title>
+    <link style="text/css" rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link style="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link style="text/css" rel="stylesheet" href="weather.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script></script>
+    <script type="text/javascript" src="weather.js"></script></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div id="headline">
+        <span id="headline-left">
+          您所在的城市：
+          <input id="cityInput" type="text" />
+          <button id="cityBtn">查询</button>
+          <span id="citySpan"></span>
+          <i id="cityX" class="fa fa-remove"></i>
+        </span>
+        <span id="headline-right"></span>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6" style="margin-left: 35px">
+          <div class="wBox-left">
+
+            <div class="row">
+              <div id="today-left" class="col-md-5">
+                <div id="main-temper">27℃</div>
+                <div id="main-date">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div id="main-below">
+                  <span></span>
+                  <img src="http://api.map.baidu.com/images/weather/day/yin.png" />
+                  <img src="http://api.map.baidu.com/images/weather/night/duoyun.png" />
+                </div>
+              </div>
+
+              <div id="today-right" class="col-md-4">
+                <div class="rightList">
+                  <i class="fa fa-cloud"></i>
+                  <span>阴转多云</span>
+                </div>
+                <div class="rightList">
+                  <i class="fa fa-thermometer-half"></i>
+                  <span>35~25℃</span>
+                </div>
+                <div class="rightList">
+                  <i class="fa fa-flag"></i>
+                  <span>北风3~4级</span>
+                </div>
+                <div class="rightList">
+                  <i class="fa fa-industry"></i>
+                  <span>pm: 52</span>
+                </div>
+              </div>
+            </div>
+
+            <table class="todayItem">
+              <tr>
+                <td class="itemHead"><i class="fa fa-female"></i></td>
+                <td class="itemBody">天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。</td>
+              </tr>
+              <tr>
+                <td class="itemHead"><i class="fa fa-bathtub"></i></td>
+                <td class="itemBody">各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。</td>
+              </tr>
+              <tr>
+                <td class="itemHead"><i class="fa fa-bicycle"></i></td>
+                <td class="itemBody">有降水，推荐您在室内进行低强度运动；若坚持户外运动，须注意携带雨具。</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="wBox-right row">
+            <div class="col-md-5">
+              <div class="right-date">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="right-temper">35~25℃</div>
+            </div>
+            <div class="col-md-5">
+              <div class="right-item">
+                <i class="fa fa-cloud"></i>
+                <span>雷阵雨转阵雨</span>
+              </div>
+              <div class="right-item">
+                <i class="fa fa-leaf"></i>
+                <span>无持续风向微风</span>
+              </div>
+            </div>
+            <div class="right-image col-md-2">
+              <img src="http://api.map.baidu.com/images/weather/day/leizhenyu.png" />
+              <img src="http://api.map.baidu.com/images/weather/night/zhenyu.png" />
+            </div>
+          </div>
+
+          <div class="wBox-right row">
+            <div class="col-md-5">
+              <div class="right-date">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="right-temper">35~25℃</div>
+            </div>
+            <div class="col-md-5">
+              <div class="right-item">
+                <i class="fa fa-cloud"></i>
+                <span>雷阵雨转阵雨</span>
+              </div>
+              <div class="right-item">
+                <i class="fa fa-leaf"></i>
+                <span>无持续风向微风</span>
+              </div>
+            </div>
+            <div class="right-image col-md-2">
+              <img src="http://api.map.baidu.com/images/weather/day/leizhenyu.png" />
+              <img src="http://api.map.baidu.com/images/weather/night/zhenyu.png" />
+            </div>
+          </div>
+          
+          <div class="wBox-right row">
+            <div class="col-md-5">
+              <div class="right-date">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="right-temper">35~25℃</div>
+            </div>
+            <div class="col-md-5">
+              <div class="right-item">
+                <i class="fa fa-cloud"></i>
+                <span>雷阵雨转阵雨</span>
+              </div>
+              <div class="right-item">
+                <i class="fa fa-leaf"></i>
+                <span>无持续风向微风</span>
+              </div>
+            </div>
+            <div class="right-image col-md-2">
+              <img src="http://api.map.baidu.com/images/weather/day/leizhenyu.png" />
+              <img src="http://api.map.baidu.com/images/weather/night/zhenyu.png" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

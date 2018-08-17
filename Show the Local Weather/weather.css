@@ -1,0 +1,162 @@
+
+body {
+  letter-spacing: 1px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/*背景图片*/
+#backgroundImage1, #backgroundImage2 {
+  position:                   fixed;
+  width:                      100%;
+  top:                        0;
+  left:                       0;
+  z-index:                    -1;
+}
+
+
+#headline {
+  margin: 50px 100px 10px 100px;
+  padding: 8px 25px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+#cityX {
+  display: none;
+  margin-left: 3px;
+  cursor: pointer;
+}
+#headline-right {
+  float: right;
+}
+
+
+.wBox-left {
+  margin: 15px 10px 15px 160px;
+  opacity: 0;
+}
+
+
+#today-left {
+  margin: 10px 0px 10px 85px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 1px 1px 5px #888;
+  background-color: #fff;
+}
+#main-temper {
+  font-size: 62px;
+  color: #2d76b6;
+}
+#main-date {
+  margin-bottom: 10px;
+}
+#main-date span {
+  margin-right: 6px;
+  font-size: 20px;
+}
+#main-below span {
+  font-size: 18px;
+  vertical-align: middle;
+}
+#main-below img {
+  width: 40px;
+  margin: 6px 0px 6px 10px;
+}
+
+
+#today-right {
+  width: auto;
+  margin: 10px 0px 10px 20px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px #888;
+  background-color: #fff;
+}
+.rightList {
+  margin: 15px 0px;
+  font-size: 16px;
+}
+.rightList i {
+  width: 20px;
+  text-align: center;
+  margin-right: 2px;
+}
+.fa-cloud {
+  color: #fc0;
+}
+.fa-thermometer-half {
+  color: #f07216;
+}
+.fa-flag, .fa-leaf {
+  color: #9cf;
+}
+.fa-industry {
+  color: #fc9;
+}
+
+
+.todayItem {
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #ddd; 
+  box-shadow: 1px 1px 5px #888;
+  background-color: #fff;
+}
+.todayItem td {
+  padding: 12px 15px 15px 15px;
+  border: 1px solid #ddd;
+}
+.itemHead {
+  width: 25px;
+  height: 65px;
+  text-align: center;
+  font-size: 20px;
+}
+.itemBody {
+  font-size: 15px;
+}
+.fa-female {
+  color: #f9c;
+}
+.fa-bathtub {
+  color: #9cf;
+}
+.fa-bicycle {
+  color: #9c9;
+}
+
+
+.wBox-right {
+  margin: 35px 0px 30px 0px;
+  padding: 20px 10px 15px 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px #888;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.right-date, .right-temper {
+  text-align: center;
+}
+.right-date span {
+  margin-right: 6px;
+  font-size: 16px;
+}
+.right-temper {
+  margin-top: 5px;
+  font-size: 30px;
+  color: #2d76b6;
+}
+.right-item {
+  font-size: 16px;
+  margin: 8px 0px; 
+}
+.right-item i {
+  width: 20px;
+  text-align: center;
+}
+.right-image img {
+  margin: 4px 5px;
+  width: 35px;
+}
