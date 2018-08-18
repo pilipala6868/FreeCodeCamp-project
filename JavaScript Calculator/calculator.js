@@ -16,9 +16,16 @@ $(document).ready(function() {
 		//上次刚运算完
 		if (operated)
 		{
+			//上次结果为NaN或Infinity
+			if (content == 'NaN' || content == 'Infinity')
+			{
+				if (/[+\-×÷%]/.test(e.target.innerText))
+					return;
+			}
+			
 			operated = false;
 			//点击数字
-			if (/\d/.test(e.target.id) == true)
+			if (/\d/.test(e.target.id))
 			{
 				$("#formula").text(e.target.id);
 				return;
@@ -57,7 +64,8 @@ $(document).ready(function() {
 				var pressNum = e.target.id;
 				if (content == "0")
 					content = "";
-				$("#formula").text(content + pressNum);
+				if (content.slice(-1) != 'π')
+					$("#formula").text(content + pressNum);
 				break;
 
 			//运算符
@@ -67,14 +75,16 @@ $(document).ready(function() {
 				if (content.slice(-1) == '.')
 					$("#formula").text(content.slice(0, -1) + operator);
 				//最后是数字
-				else if (/\d/.test(content.slice(-1)) == true)
+				else if (/\d/.test(content.slice(-1)) == true || content.slice(-1) == 'π')
 					$("#formula").text(content + operator);
 				break;
 
 			//π
 			case "pi":
-				if (/\d/.test(content.slice(-1)) == false)
+				if (/[+\-×÷%]/.test(content.slice(-1)) == true)
 					$("#formula").text(content + 'π');
+				else if (content == "0")
+					$("#formula").text('π');
 				break;
 
 			//小数点
@@ -148,20 +158,30 @@ $(document).ready(function() {
 	//执行运算
 	function run(content)
 	{
-		var sum;
+		operated = true;
 		//最后是点
 		if (content.slice(-1) == '.')
 			content.slice(0, -1);
-		//处理π
-
-
 		//没有运算符
+		if (/[+\-×÷%]/.test(content) == false)
+		{
+			if (content == 'π')
+				return Math.PI;
+			else
+				return content;
+		} 
+		//处理π
+		var piindex = content.search(/[π]/)
+		if (piindex != -1)
+			content = content.slice(0, piindex) + '3.1416' + content.slice(piindex+1);
 
+		//处理乘除运算符
+		content = content.replace(/[×]/g, '*');
+		content = content.replace(/[÷]/g, '/');
 
-		//除以零
-
-
-		return sum;
+		//运算
+		var result = eval(content);
+		return result;
 	}
-	
+
 });
