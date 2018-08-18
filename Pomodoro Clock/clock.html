@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Pomodoro Clock</title>
+    <link style="text/css" rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link style="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href='http://fonts.font.im/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.font.im/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="clock.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="clock.js"></script>
+  </head>
+  <body>
+
+    <div id="setupBox">
+      <div class="setup" id="setup_left">
+        <div>Break Length</div>
+        <div class="setup_num"><span id="subbreak">-</span><span id="breaknum">5</span><span id="addbreak">+</span></div>
+      </div>
+      <div class="setup" id="setup_right">
+        <div>Session Length</div>
+        <div class="setup_num"><span id="subsession">-</span><span id="sessionnum">25</span><span id="addsession">+</span></div>
+      </div>
+    </div>
+
+    <div id="clockBox">
+      <div class="clock" id="clock_left">
+        <div id="timeslot">SESSION</div>
+        <div id="curminute"><span>25</span><span>m</span></div>
+      </div>
+      <div class="clock" id="clock_right">
+        <div id="icon"><i class="fa fa-free-code-camp"></i></div>
+        <div id="cursecond"><span>60</span><span>s</span></div>
+      </div>
+    </div>
+
+    <svg id="arc_left" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <polyline />
+    </svg>
+    <svg id="arc_right" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <polyline />
+    </svg>
+
+  </body>
+</html>
