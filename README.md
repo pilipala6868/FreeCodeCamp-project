@@ -7,3 +7,4 @@
 * Show the Local Weather —— 天气预报 —— 2018.08.05
 * Wikipedia Viewer —— 维基百科搜索 —— 2018.08.07
 * JavaScript Calculator —— JS计算器 —— 2018.08.18
+* Pomodoro Clock —— 番茄计时器 —— 2018.08.19
