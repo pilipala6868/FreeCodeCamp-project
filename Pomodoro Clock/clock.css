@@ -20,14 +20,16 @@ body {
 	margin: 0px 135px;
 	font-family: 'Oswald', sans-serif;
 	font-size: 23px;
+	color: #6c757d;
 }
 
 .setup_num {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 32px;
+	color: #343a40;
 }
-#subbreak, #addbreak, #subsession, #addsession {
+.setupBt {
 	cursor: pointer;
 }
 #breaknum, #sessionnum {
@@ -60,10 +62,11 @@ body {
 	box-shadow: 0px 0px 15px 25px #F7F7BC inset;
 }
 
-#timeslot, #icon {
+#timeslot, #sloticon {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
 	margin: 15px 0;
+	color: #343a40;
 }
 #curminute, #cursecond {
 	font-family: 'Montserrat', sans-serif;
@@ -77,17 +80,33 @@ body {
 }
 
 
+#mousetip {
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+}
+.tip {
+	opacity: 0;
+	margin: 0px 60px;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+.tip i {
+	margin-right: 4px;
+}
+
+
 svg {
 	position: absolute;
 	z-index: 1;
 }
 #arc_left polyline {
 	fill: none;
-	stroke: #369;
+	stroke: #007bff;
 	stroke-width: 10px;
 }
 #arc_right polyline {
 	fill: none;
-	stroke: #393;
+	stroke: #28a745;
 	stroke-width: 10px;
 }
